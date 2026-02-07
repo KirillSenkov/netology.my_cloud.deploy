@@ -457,11 +457,12 @@ export default function FilesPage() {
               <button className='files__uploadBtn' type='button' onClick={openUploadModal}>
                 Загрузить
               </button>
-            ) : (
-              <UserBadge
-                user={owner}
-                onUsernameClick={() => openUserModal(targetUser.id)}
-              />
+            ) : (owner && (
+                <UserBadge
+                  user={owner}
+                  onUsernameClick={() => openUserModal(owner.id)}
+                />
+              )
             )
           }
         </div>
