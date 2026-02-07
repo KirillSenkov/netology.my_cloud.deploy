@@ -1,0 +1,90 @@
+.login {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.login__title {
+  margin: 0 0 16px;
+  font-size: 22px;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login__label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.login__input {
+  height: 34px;
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.login__button {
+  color: #111827;
+  height: 36px;
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.login__button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.login__error {
+  padding: 10px 12px;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  background: #fff1f2;
+  color: #991b1b;
+  font-size: 14px;
+}
+
+.login__info {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #cbd5f5;
+  opacity: 0.9;
+}
+
+.login__infoText {
+  margin-bottom: 8px;
+}
+
+.login__infoList {
+  margin: 8px 0 10px;
+  padding-left: 16px;
+  list-style: none;
+}
+
+.login__infoList li {
+  margin-bottom: 4px;
+}
+
+.login__infoHint {
+  margin-top: 8px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.login__regLink {
+  text-decoration: none;
+  color: #8c7cf0;
+}
+
+.login__regLink:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- cloud -->
+  <path d="M20 44h30a10 10 0 0 0 0-20 15 15 0 0 0-29-4A9 9 0 0 0 20 44Z" fill="#111827"></path>
+
+  <!-- file stack -->
+  <rect x="34" y="34" width="12" height="14" rx="2" fill="#e5e7eb"></rect>
+  <rect x="30" y="36" width="12" height="14" rx="2" fill="#cbd5f5"></rect>
+  <rect x="26" y="38" width="12" height="14" rx="2" fill="#9ca3af"></rect>
+</svg>

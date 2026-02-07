@@ -1,0 +1,72 @@
+.userBadge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.userBadge__username {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #e5e7eb;
+  white-space: nowrap;
+}
+
+.userBadge__usernameBtn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.userBadge__usernameBtn:hover {
+  text-decoration: underline;
+}
+
+.userBadge__details {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.userBadge__paren {
+  font-size: 24px;
+  font-weight: 600;
+  opacity: 0.75;
+  line-height: 1;
+}
+
+.userBadge__inner {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+
+  font-size: 14px;
+  line-height: 1.15;
+
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.userBadge__fullName {
+  opacity: 0.92;
+}
+
+.userBadge__email {
+  color: #c7d2fe;
+  text-decoration: none;
+}
+
+.userBadge__email:hover {
+  text-decoration: underline;
+}
+
+.userBadge__email--empty {
+  opacity: 0.6;
+}

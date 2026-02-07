@@ -1,0 +1,250 @@
+.files {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.files__title {
+  margin: 0 0 18px 0;
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.files__error {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 90, 90, 0.35);
+  border-radius: 12px;
+  background: rgba(255, 0, 0, 0.08);
+  color: rgba(255, 230, 230, 0.95);
+}
+
+.files__box {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(10, 15, 25, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+.files__tipZone {
+  padding: 16px 16px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.filesTip {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: rgba(0, 0, 0, 0.18);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.filesTip--empty {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.filesTip__label {
+  font-size: 18px;
+}
+
+.filesTip__comment {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: calc(100% + 10px);
+  z-index: 10;
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px 12px;
+
+  max-height: 400px;
+  overflow: auto;
+
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.filesTip__commentTitle {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
+
+.filesTip__commentText {
+  font-size: 16px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.files__topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.files__topRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.files__uploadBtn {
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.files__uploadBtn:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.files__xScroll {
+  overflow-x: auto;
+}
+
+.files__scrollInner {
+  min-width: 1000px;
+  min-width: max-content;
+}
+
+.files__scroll {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.filesGrid {
+  display: grid;
+  grid-template-columns: 52px 1.6fr 120px 190px 190px 220px;
+  align-items: center;
+}
+
+.files__header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  padding: 14px 16px;
+  background: rgba(5, 10, 18, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+}
+
+.files__hNum {
+  text-align: left;
+}
+
+.files__hActions {
+  text-align: right;
+  padding-right: 2px;
+}
+
+.files__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.files__row {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.files__row:last-child {
+  border-bottom: 0;
+}
+
+.files__num {
+  font-size: 22px;
+  opacity: 0.75;
+}
+
+.files__name {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.files__name:hover {
+  text-decoration: underline;
+}
+
+.files__nameText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.files__meta {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.files__actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.files__iconBtn {
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.92);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.files__iconBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.files__iconBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.files__iconBtn--active {
+  border-color: #6b7280;
+  box-shadow: 0 0 0 2px rgba(107, 114, 128, 0.35);
+  transform: translateY(1px);
+}
+
+.files__hint {
+  padding: 18px 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.files__downloadError {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border: 1px solid rgba(220, 38, 38, 0.35);
+  border-radius: 8px;
+  background: rgba(220, 38, 38, 0.06);
+  color: #b91c1c;
+  font-size: 14px;
+  line-height: 1.25;
+}

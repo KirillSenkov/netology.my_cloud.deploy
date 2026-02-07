@@ -1,0 +1,65 @@
+.register {
+  max-width: 520px;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+.register__title {
+  margin: 0 0 16px;
+  font-size: 24px;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.register__label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.register__input {
+  height: 36px;
+  padding: 6px 10px;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+.register__button {
+  height: 36px;
+  padding: 6px 10px;
+  border: 1px solid #374151;
+  border-radius: 6px;
+  background: #111827;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+.register__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.register__errors {
+  margin: -6px 0 0;
+  padding-left: 18px;
+}
+
+.register__error {
+  font-size: 13px;
+  color: #fca5a5;
+}
+
+.register__apiError {
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px solid #7f1d1d;
+  border-radius: 6px;
+  background: #1f0a0a;
+  color: #fecaca;
+}

@@ -1,0 +1,104 @@
+.adminUsers {
+  padding: 16px;
+}
+
+.adminUsers__topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.adminUsers__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.adminUsers__hint {
+  padding: 12px;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+.adminUsers__error {
+  padding: 10px 12px;
+  border: 1px solid #7f1d1d;
+  border-radius: 12px;
+  background: #1f0a0a;
+  color: #fecaca;
+  margin-bottom: 12px;
+}
+
+.adminUsers__box {
+  border: 1px solid #374151;
+  border-radius: 12px;
+  background: #0b1220;
+  color: #e5e7eb;
+  overflow: auto;
+}
+
+.adminUsersGrid {
+  display: grid;
+  grid-template-columns: 44px minmax(260px, 1fr) 140px 90px 110px;
+  gap: 10px;
+  align-items: center;
+}
+
+.adminUsers__header {
+  padding: 10px 12px;
+  border-bottom: 1px solid #374151;
+  background: #0f172a;
+}
+
+.adminUsers__h {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.adminUsers__hNum {
+  text-align: center;
+}
+
+.adminUsers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.adminUsers__row {
+  padding: 12px;
+  border-bottom: 1px solid #374151;
+}
+
+.adminUsers__row:last-child {
+  border-bottom: none;
+}
+
+.adminUsers__num {
+  text-align: center;
+  opacity: 0.9;
+}
+
+.adminUsers__user {
+  min-width: 0;
+}
+
+.adminUsers__metaHeader {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.adminUsers__meta {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

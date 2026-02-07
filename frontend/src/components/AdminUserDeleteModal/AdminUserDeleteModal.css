@@ -1,0 +1,97 @@
+.adminUserDeleteModal {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+}
+
+.adminUserDeleteModal__backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+}
+
+.adminUserDeleteModal__backdrop:disabled {
+  cursor: not-allowed;
+}
+
+.adminUserDeleteModal__panel {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  width: min(520px, calc(100% - 32px));
+  border: 1px solid #374151;
+  border-radius: 12px;
+  background: #0b1220;
+  color: #e5e7eb;
+  padding: 14px;
+}
+
+.adminUserDeleteModal__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.adminUserDeleteModal__text {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.adminUserDeleteModal__username {
+  font-weight: 800;
+}
+
+.adminUserDeleteModal__check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.adminUserDeleteModal__warning {
+  padding: 10px 12px;
+  border: 1px solid #7f1d1d;
+  border-radius: 10px;
+  background: #1f0a0a;
+  color: #fecaca;
+  margin-bottom: 12px;
+}
+
+.adminUserDeleteModal__error {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #7f1d1d;
+  border-radius: 10px;
+  background: #1f0a0a;
+  color: #fecaca;
+}
+
+.adminUserDeleteModal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.adminUserDeleteModal__btn {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #374151;
+  background: #111827;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+.adminUserDeleteModal__btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.adminUserDeleteModal__btn--danger {
+  border-color: #7f1d1d;
+}
