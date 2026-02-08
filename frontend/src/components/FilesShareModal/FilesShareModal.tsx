@@ -73,7 +73,7 @@ export default function FilesShareModal({
 							<button
 								className='filesShareModal__copyBtn'
 								type='button'
-								title={isEnabled ? 'Копировать' : 'Сначала создайте ссылку'}
+								title={isEnabled ? 'Копировать (для https, иначе - выделение и Ctrl + C)' : 'Сначала создайте ссылку'}
 								onClick={copy}
 								disabled={!isEnabled || isBusy}
 							>

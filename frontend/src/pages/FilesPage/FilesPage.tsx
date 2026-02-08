@@ -368,8 +368,8 @@ export default function FilesPage() {
 
   // Share modal handle
   const [shareFileId, setShareFileId] = useState<number | null>(null);
-  const shareFile =
-  shareFileId === null ? null : items.find((x) => x.id === shareFileId) ?? null;
+  const shareFile = 
+    shareFileId === null ? null : items.find((x) => x.id === shareFileId) ?? null;
   const [shareStatus, setShareStatus] = useState<Status>('idle');
   const [shareError, setShareError] = useState<string | null>(null); 
 
