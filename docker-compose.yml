@@ -1,0 +1,49 @@
+services:
+  db:
+    image: postgres:16-alpine
+    env_file:
+      - ./backend/.env
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  backend:
+    build:
+      context: ./backend
+    env_file:
+      - ./backend/.env
+    environment:
+      DEBUG: "0"
+    volumes:
+      - storage_data:/data/storage
+    depends_on:
+      db:
+        condition: service_healthy
+
+
+  frontend_build:
+    build:
+      context: ./frontend
+    command: sh -c "cp -r /app/dist/* /out/"
+    volumes:
+      - frontend_build:/out
+
+  nginx:
+    image: nginx:1.27-alpine
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+      - frontend_build
+    volumes:
+      - ./infra/nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - frontend_build:/usr/share/nginx/html:ro
+
+volumes:
+  db_data:
+  storage_data:
+  frontend_build:
